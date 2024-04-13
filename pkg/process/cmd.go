@@ -22,6 +22,8 @@ import (
 	"time"
 )
 
+// Cmd wraps [os/exec.Cmd] and adds setters and getters for its
+// struct memebers.
 type Cmd interface {
 	CmdBehaviors
 	CmdGetters

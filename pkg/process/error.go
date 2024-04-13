@@ -19,6 +19,8 @@ import (
 	"time"
 )
 
+// ExitError wraps an [os/exec.ExitError] and adds setters and getters
+// for its struct members.
 type ExitError interface {
 	error
 	ExitCode() int
